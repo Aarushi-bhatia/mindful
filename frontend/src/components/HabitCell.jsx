@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "../lib/utils"; // You can replace `cn` with className strings if not using Tailwind merge utils
 
 const getColor = (done) => {
-  return done ? "bg-green-300" : "bg-[#EBEDF0]";
+  return done ? "bg-[#7dd3ae]" : "bg-[#EBEDF0]";
 };
 
 const HabitCell = ({ date, done, isToday }) => {

@@ -35,7 +35,7 @@ const About = () => {
           <div className="flex-1 space-y-4">
             <HabitCard icon= "🧘" title="Daily Meditation" daysCompleted={12} slant={3} />
             <HabitCard icon="📚" title="Reading" daysCompleted={22} slant={-3} />
-            {/* <HabitCard icon="✍️" title="Journaling" daysCompleted={15} slant={3} /> */}
+            <HabitCard icon="✍️" title="Journaling" daysCompleted={15} slant={3} />
           </div>
         </div>
       </div>

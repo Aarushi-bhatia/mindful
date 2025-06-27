@@ -1,17 +1,12 @@
 "use client";
-import React, { useState } from 'react';
+import { Rabbit } from "lucide-react";
+import React, { useState } from "react";
 
 const navlinks = [
-  { navs : "/#home" ,
-    name : "Home",
-  },
-  { navs : "/#aboutus" ,
-    name : "About Us",
-  },
-  { navs : "/#features" ,
-    name : "Features",
-  },
-]
+  { navs: "/#home", name: "Home" },
+  { navs: "/#aboutus", name: "About Us" },
+  { navs: "/#features", name: "Features" },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +15,12 @@ const Navbar = () => {
       <nav className="flex justify-between items-center px-6 md:px-12 py-3 bg-white sticky top-0 z-50 rounded-2xl border border-none shadow-[0_12px_24px_rgba(0,0,0,0.1)] backdrop-blur-md">
         {/* Brand */}
         <div className="flex flex-row font-extrabold items-center text-2xl text-gray-900 tracking-tight">
-          {/* <img src="/logo.png" style={{ height: '2.5rem' }} alt="Logo" /> */}
-          <span className="text-2xl"
+          <Rabbit className="w-8 h-8 mr-2" />
+          <span
+            className="text-2xl"
             style={{
-              textShadow: '0 2px 8px rgba(16,16,32,0.10), 0 1px 2px rgba(0,0,0,0.18)'
+              textShadow:
+                "0 2px 8px rgba(16,16,32,0.10), 0 1px 2px rgba(0,0,0,0.18)",
             }}
           >
             Mind
@@ -45,7 +42,7 @@ const Navbar = () => {
         <div className="absolute md:static inset-x-0 md:flex md:justify-center mx-auto">
           <ul
             className={`flex-col md:flex md:flex-row md:justify-center gap-6 text-lg font-semibold text-gray-700 absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent px-6 md:px-0 py-4 md:py-0 transition-all duration-300 ease-in ${
-              isOpen ? 'flex' : 'hidden'
+              isOpen ? "flex" : "hidden"
             }`}
           >
             {navlinks.map((item, index) => (
