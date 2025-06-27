@@ -69,9 +69,9 @@ const getMonthName = (monthIndex) => {
   return months[monthIndex];
 };
 const habitLogs = {
-  "2025-06-25": 1,
-  "2025-06-26": 3,
-  "2025-06-15": 2,
+  "2025-06-25": true,
+  "2025-06-26": true,
+  "2025-06-15": true,
 };
 // Habits Management Page
 const HabitsPage = () => {

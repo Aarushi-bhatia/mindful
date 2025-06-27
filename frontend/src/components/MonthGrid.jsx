@@ -20,7 +20,7 @@ const MonthGrid = ({ year, month, habitLogs }) => {
     const isToday = date.toDateString() === today.toDateString();
 
     cells.push(
-      <HabitCell key={dateKey} date={date} count={count} isToday={isToday} />
+      <HabitCell key={dateKey} date={date}  done={habitLogs[dateKey] === true} isToday={isToday} />
     );
   }
 
