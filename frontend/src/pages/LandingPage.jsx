@@ -6,11 +6,15 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import Nav from "../components/Nav";
+import Navbar from "../components/Navbar";
 
 // Landing Page
 const LandingPage = () => {
   const navigate = useNavigate();
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-6 py-20">
         {/* Hero Section */}
@@ -104,6 +108,7 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
