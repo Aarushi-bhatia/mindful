@@ -16,9 +16,9 @@ const HeroPage = () => {
         
         <div className="flex items-center justify-center gap-2 mb-6">
           <Rabbit className="w-14 h-14" />
-          <h1 className="text-5xl font-bold text-gray-800">Mindful</h1>
+          <h1 className="text-6xl font-bold text-gray-800">Mindful</h1>
         </div>
-        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+        <p className="text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
           A peaceful space to build lasting habits. Track your journey with
           gentle reminders and beautiful visualizations.
         </p>
